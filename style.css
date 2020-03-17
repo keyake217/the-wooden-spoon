@@ -2428,3 +2428,8 @@ RESERVATION SECTION
     border-right: none;
   }
 }
+
+.alert-info {
+  position: relative
+  min-width: 550px;
+}

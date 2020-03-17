@@ -25,12 +25,18 @@
     <!-- Main style sheet -->
     <link href="style.css" rel="stylesheet">
 
-   
+    <!-- custom js -->
+    <script>
+      function hideAnnouncement() {
+        var announcement = document.getElementById("announcement");
+        announcement.style.display = "none";
+      }
+    </script>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
-    
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,9 +59,10 @@
       <span>Top</span>
     </a>
   <!-- END SCROLL TOP BUTTON -->
- 
+
 <!-- Start header section -->
   <header id="mu-header">
+
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -80,6 +87,15 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+    <!-- Announcement  -->
+    <div class="alert alert-info" role="alert" id="announcement">
+    Due to COVID-19, we be temporarily operating only through delivery, pickup, and drive-through service. <a href="#">Click here for more information.</a>
+    <button type="button" class="close" aria-label="Close" onclick="hideAnnouncement()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+
   </header>
   <!-- End header section -->
 
@@ -597,7 +613,7 @@
     </div>
   </section>
   <!-- End Restaurant Menu -->
-  
+
   <!-- Start Client Testimonial section -->
   <section id="mu-client-testimonial">
     <div class="mu-overlay">
@@ -774,7 +790,7 @@
     </div>
   </footer>
   <!-- End Footer -->
-  
+
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
