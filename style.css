@@ -1381,6 +1381,94 @@ RESERVATION SECTION
 }
 
 /*==================
+ ORDER ONLINE SECTION
+====================*/
+#mu-order-online {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content {
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left {
+  display: inline;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .form-group {
+  margin-bottom: 25px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .form-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form input[type="text"],
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form input[type="email"] {
+  color: #000;
+  border-radius: 0;
+  height: 40px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form input[type="text"]:focus,
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form input[type="email"]:focus {
+  box-shadow: none;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form textarea {
+  color: #000;
+  border-radius: 0;
+  padding: 10px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-left .mu-order-online-form textarea:focus {
+  box-shadow: none;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right {
+  display: inline;
+  float: left;
+  padding: 0 30px;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget {
+  display: inline;
+  float: left;
+  margin-bottom: 25px;
+  width: 100%;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget h3 {
+  margin-top: 0px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget > p {
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address {
+  margin-top: 20px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address p {
+  letter-spacing: 0.5px;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address p i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+#mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address p span {
+  display: inline-block;
+  margin-right: 20px;
+  min-width: 130px;
+}
+
+/*==================
  MAP SECTION
 ====================*/
 #mu-map {
@@ -2045,6 +2133,11 @@ RESERVATION SECTION
     padding: 0;
   }
 
+  #mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right {
+    margin-top: 50px;
+    padding: 0;
+  }
+
   #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img {
     height: 200px;
   }
@@ -2339,6 +2432,18 @@ RESERVATION SECTION
   }
 
   #mu-contact {
+    padding: 100px 0 50px;
+  }
+
+  #mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right {
+    text-align: center;
+  }
+  
+  #mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address {
+    text-align: left;
+  }
+  
+  #mu-order-online {
     padding: 100px 0 50px;
   }
 
