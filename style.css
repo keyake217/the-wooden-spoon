@@ -393,7 +393,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 0 0px;
 }
 #mu-about-us .mu-about-us-area {
   display: inline;
@@ -589,7 +589,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 0 10px;
 }
 #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-tab-content-left {
   display: inline;
