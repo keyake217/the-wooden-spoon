@@ -26,12 +26,8 @@
     <link href="style.css" rel="stylesheet">
 
     <!-- custom js -->
-    <script>
-      function hideAnnouncement() {
-        var announcement = document.getElementById("announcement");
-        announcement.style.display = "none";
-      }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -81,8 +77,7 @@
             <li><a href="#mu-slider">HOME</a></li>
             <li><a href="#mu-about-us">ABOUT US</a></li>
             <li><a href="#mu-restaurant-menu">MENU</a></li>
-            <li><a href="https://tableagent.com/kansas-city/the-wooden-spoon-at-fox-hill-llc/" target="_blank">RESERVATION</a></li>
-            <li><a href="https://foxhill.orderwoodenspoonkc.com/order#/" target="_blank">ORDER ONLINE</a></li>
+            <li><a href="#mu-reservation" target="_blank">ORDER ONLINE</a></li>
             <li><a href="#mu-client-testimonial">TESTIMONIALS</a></li>
             <li><a href="#mu-contact">CONTACT</a></li>
           </ul>
@@ -91,11 +86,11 @@
     </nav>
 
     <!-- Announcement  -->
+    <!-- Check bootstrap alert classes to change alert color/type -->
     <div class="alert alert-info" role="alert" id="announcement">
-    Only our Indian Creek and Roe location is open.
-    <a href="https://tableagent.com/kansas-city/the-wooden-spoon-at-fox-hill-llc/" target="_blank">Make a reservation here.</a>
-        
-    <button type="button" class="close" aria-label="Close" onclick="hideAnnouncement()">
+    Our College location has reopened!
+
+    <button type="button" class="close" aria-label="Close" onclick="hide('announcement')">
       <span aria-hidden="true">&times;</span>
     </button>
     </div>
@@ -193,17 +188,17 @@
             <div class="mu-restaurant-menu-content">
               <ul class="nav nav-tabs mu-restaurant-menu">
                 <!-- Active means the page starts viewing it first -->
-                <li class="active"><a href="#specials" data-toggle="tab">Specials</a></li>
-                <li><a href="#breakfast" data-toggle="tab">Breakfast</a></li>
-                <li><a href="#lunch" data-toggle="tab">Lunch</a></li>
-                <li><a href="#a-la-carte" data-toggle="tab">A La Carte</a></li>
-                <li><a href="#sides" data-toggle="tab">Sides</a></li>
-                <li><a href="#drinks" data-toggle="tab">Drinks</a></li>
+                <li class="active" id="specials-tab"><a href="#specials" data-toggle="tab">Specials</a></li>
+                <li id="breakfast-tab"><a href="#breakfast" data-toggle="tab">Breakfast</a></li>
+                <li id="lunch-tab"><a href="#lunch" data-toggle="tab">Lunch</a></li>
+                <li id="a-la-cart-tab"><a href="#a-la-carte" data-toggle="tab">A La Carte</a></li>
+                <li id="sides-tab"><a href="#sides" data-toggle="tab">Sides</a></li>
+                <li id="drinks-tab"><a href="#drinks" data-toggle="tab">Drinks</a></li>
               </ul>
 
               <!-- Tab panes -->
               <div class="tab-content">
-                
+
                 <div class="tab-pane fade in active" id="specials">
                   <div class="mu-tab-content-area">
                     <p style="text-align: center;">
@@ -244,7 +239,7 @@
                                 </div>
                               </div>
                             </li>
-                            
+
                             <li style="padding: 0px">
                             </li>
                           </ul>
@@ -255,7 +250,7 @@
                           <ul class="mu-menu-item-nav">
                              <li>
                                <img src="assets/img/specials.jpg" style="width: 80%">
-                               
+
                               <!-- <div class="media">
                                 <div class="media-body">
                                   <h4 class="media-heading"><a href="#">Corned Beef Hash &amp; Eggs*</a></h4>
@@ -304,8 +299,8 @@
                    </div>
                  </div>
                 </div>
-                
-                
+
+
                 <div class="tab-pane fade " id="breakfast">
                   <div class="mu-tab-content-area">
                     <p style="text-align: center;">
@@ -419,6 +414,9 @@
                  	*Thoroughly cooking foods of animal origin such as beef, eggs, fish, lamb, pork, poultry, or shellfish reduces the risk of foodborne illness. Individuals with certain health conditions may be at higher risk if these foods are consumed raw or undercooked. Consult your physician or public health official for further information.
                  </p>
                 </div>
+
+
+
                 <div class="tab-pane fade " id="lunch">
                   <div class="mu-tab-content-area">
                    <p style="text-align: center;">
@@ -638,6 +636,8 @@
                    </div>
                  </div>
                 </div>
+
+
                 <div class="tab-pane fade " id="drinks">
                   <div class="mu-tab-content-area">
                   <p style="text-align: center;">
@@ -711,6 +711,7 @@
                    </div>
                  </div>
                 </div>
+                <!-- end of drinks tab -->
               </div>
             </div>
           </div>
@@ -724,7 +725,7 @@
   <!-- End Restaurant Menu -->
 
   <!-- Start Reservation section -->
-  <section id="mu-reservation" style="padding: 50px 0px">
+  <!-- <section id="mu-reservation" style="padding: 50px 0px">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -767,11 +768,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End Reservation section -->
 
-<!-- Testing -->
-  <section id="mu-reservation" style="padding: 50px 0px; background: white">
+<!-- Actual Order Online section -->
+  <section id="mu-reservation" style="padding: 50px 0px; background: #FAFAFA  ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -784,20 +785,36 @@
             </div>
             <div class="mu-reservation-content">
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="breakfast">
+                <div class="tab-pane fade in active">
                   <div class="mu-tab-content-area">
                       <ul class="mu-menu-item-nav">
+
+
                         <li>
-                          <div class="media">
+                          <div class="media" style="margin: 10px 0;">
                             <div class="media-body">
                               <h4 class="media-heading" style="border:3px; border-style:solid; border-color:#9c1c34; padding:1em">
                                 <a href="https://foxhill.orderwoodenspoonkc.com/order#/" style="color: black" target="_blank">
-                                  <div style="text-align: center; font-size: 1.1em"> Carryout/Delivery </div>
+                                  <div style="text-align: center; font-size: 1.1em"> Indian Creek and Roe </div>
                                 </a>
                               </h4>
                             </div>
                           </div>
                         </li>
+
+                        <li>
+                          <div class="media" style="margin: 10px 0;">
+                            <div class="media-body">
+                              <h4 class="media-heading" style="border:3px; border-style:solid; border-color:#9c1c34; padding:1em">
+                                <a href="https://collegeblvd.orderwoodenspoonkc.com/" style="color: black" target="_blank">
+                                  <div style="text-align: center; font-size: 1.1em"> College and Quivira </div>
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+                      </li>
+
+
                       </ul>
                      </div>
                    </div>
@@ -809,7 +826,7 @@
     </div>
   </section>
   <!-- Testing -->
-  
+
   <!-- Start Order Online section -->
   <!-- <section id="mu-order-online" style="padding: 50px 0px">
     <div class="container">
@@ -822,8 +839,8 @@
               <i class="fa fa-spoon"></i>
               <span class="mu-title-bar"></span>
             </div>
-            
-            
+
+
             <div class="tab-content">
               <div class="tab-pane fade in active" id="breakfast">
                 <div class="mu-tab-content-area">
@@ -929,7 +946,7 @@
                 <h3 style="text-align: center; color: #9c1c34">Locations</h3>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="mu-contact-left">
+                  <div class="mu-contact-left" style="font-family: Prata">
                       <address>
                         <p>
                           <i class="fa fa-map-marker"></i>
@@ -951,7 +968,7 @@
                   <div class="mu-contact-right">
                     <div class="mu-contact-widget">
                       <address style="margin: 10px 0px">
-                        <h4 style="text-align: center"><strong>Temporarily closed</strong></h4>
+                        <!-- <h4 style="text-align: center"><strong>Temporarily closed</strong></h4> -->
                         <p>
 	                        <i class="fa fa-map-marker"></i>
 	                        <a href="https://goo.gl/maps/2TkP6Uxt9FhwyDqn8" target="_blank" style="color: #383838">College Village, 11823 College Blvd, Overland Park, KS 66210</a>

@@ -17,6 +17,7 @@
 #COUNTER SECTION
 #MENU ITEM SECTION
 #RESERVATION SECTION
+#ORDER ONLINE SECTION
 #GALLERY SECTION
 #TESTIMONIAL SECTION
 #SUBSCRIPTION SECTION
@@ -541,6 +542,9 @@ img {
 /*==================
  MENU ITEM SECTION
 ====================*/
+/* #specials {
+  display: none
+} */
 #mu-restaurant-menu {
   display: inline;
   float: left;
@@ -768,6 +772,11 @@ RESERVATION SECTION
 .datepicker table tr td.day:hover {
   color: #fff;
 }
+
+
+/*==================
+ ORDER ONLINE SECTION
+====================*/
 
 /*==================
  GALLERY SECTION
@@ -2438,11 +2447,11 @@ RESERVATION SECTION
   #mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right {
     text-align: center;
   }
-  
+
   #mu-order-online .mu-order-online-area .mu-order-online-content .mu-order-online-right .mu-order-online-widget address {
     text-align: left;
   }
-  
+
   #mu-order-online {
     padding: 100px 0 50px;
   }
