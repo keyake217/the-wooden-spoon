@@ -545,6 +545,13 @@ img {
 /* #specials {
   display: none
 } */
+#specials img {
+  width: 80%;
+  /* The three properties below center and size the img */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #mu-restaurant-menu {
   display: inline;
   float: left;
