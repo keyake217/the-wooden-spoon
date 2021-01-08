@@ -7,7 +7,7 @@
 
 */
 
-/* Table of Content
+/* Table of Contents
 ==================================================
 #BASIC TYPOGRAPHY
 #HEADER SECTION
@@ -160,6 +160,13 @@ img {
   top: 0;
   position: fixed;
   z-index: 999;
+}
+
+/*==================
+ Announcement banner
+====================*/
+#announcement {
+  display: none;
 }
 
 /*==================
