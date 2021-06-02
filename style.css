@@ -2557,11 +2557,12 @@ RESERVATION SECTION
   }
 }
 
+.close {
+    position: relative;
+    top: -28px !important;
+}
 .alert span {
   font-size: 35px;
-}
-.close {
-  top:-28px !important;
 }
 
 .alert > div {

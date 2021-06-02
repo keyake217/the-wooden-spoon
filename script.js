@@ -1,12 +1,9 @@
 // map colors for bootstrap alerts
 var alertColor = {'blue': 'alert-info',
-             'grey': 'alert-secondary',
-             'green': 'alert-success',
-             'red': 'alert-danger',
-             'yellow': 'alert-warning',
-             'light-grey': 'alert-light',
-             'dark-grey': 'alert-dark'
-            }
+                  'green': 'alert-success',
+                  'red': 'alert-danger',
+                  'yellow': 'alert-warning',
+                }
 
 
 // run multiple funcs when the page loads
@@ -14,8 +11,8 @@ window.onload = function (event) {
   schedule(showAnnouncement,
            '06-13-2021',
            '06-17-2021',
-           'Everyone needs a break!! <br/><br/> We are taking the staff camping. They have been nothing less than amazing throughout the pandemic. We will be closed from Monday Jun 14-16th, our stores will reopen on June 17. Thank you for understanding. <br/><br/> Wayne & Tina',
-           'blue');
+           '<strong>Everyone needs a break!! <br/><br/> We are taking the staff camping. They have been nothing less than amazing throughout the pandemic. We will be closed from Monday Jun 14-16th, our stores will reopen on June 17. Thank you for understanding. <br/><br/> Wayne & Tina <\strong>',
+           'green');
   hideSpecials();
 }
 
