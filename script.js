@@ -1,6 +1,21 @@
+// map colors for bootstrap alerts
+var alertColor = {'blue': 'alert-info',
+             'grey': 'alert-secondary',
+             'green': 'alert-success',
+             'red': 'alert-danger',
+             'yellow': 'alert-warning',
+             'light-grey': 'alert-light',
+             'dark-grey': 'alert-dark'
+            }
+
+
 // run multiple funcs when the page loads
 window.onload = function (event) {
-  // schedule(showAnnouncement, '01-08-2021','01-09-2021', 'Test announcement message 2');
+  schedule(showAnnouncement,
+           '06-13-2021',
+           '06-17-2021',
+           'Everyone needs a break!! <br/><br/> We are taking the staff camping. They have been nothing less than amazing throughout the pandemic. We will be closed from Monday Jun 14-16th, our stores will reopen on June 17. Thank you for understanding. <br/><br/> Wayne & Tina',
+           'blue');
   hideSpecials();
 }
 
@@ -14,13 +29,19 @@ function show(elementById) {
     element.style.display = "block";
 }
 
-function showAnnouncement(message) {
+function showAnnouncement(message, color) {
+    // change banner color
+    $('#announcement').removeClass("alert-danger").addClass(alertColor[color]);
+
+    // change banner message
     element = document.getElementById('announcement-message');
     element.innerHTML = message
+
     show('announcement');
 }
 
-// func: function that we want to run during specific dates
+// func: function that we want to run during specific dates.
+//       Date specifies 12AM, the beginning of that day
 // dateFrom: YYYY-MM-DD formatted string
 // dateTo: YYYY-MM-DD formatted string
 // ...args: to pass arbitrary number of arguments to func
