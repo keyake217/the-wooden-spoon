@@ -1,6 +1,6 @@
 // run multiple funcs when the page loads
 window.onload = function (event) {
-  // schedule(showAnnouncement, '01-08-2021','01-09-2021', 'Test announcement message 2');
+  schedule(showAnnouncement, '01-08-2021','06-03-2021', 'Test announcement message 2');
   hideSpecials();
 }
 
@@ -20,7 +20,8 @@ function showAnnouncement(message) {
     show('announcement');
 }
 
-// func: function that we want to run during specific dates
+// func: function that we want to run during specific dates.
+//       Date specifies the midnight of that day
 // dateFrom: YYYY-MM-DD formatted string
 // dateTo: YYYY-MM-DD formatted string
 // ...args: to pass arbitrary number of arguments to func
