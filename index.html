@@ -16,581 +16,176 @@
 	<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css" /><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+    <![endif]-->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+  </head>
+  <body>
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="mu-preloader">
+      <img src="assets/img/preloader_cat.gif" alt=" loader img">
+    </div>
+  </div>
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+      <span>Top</span>
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+<!-- Start header section -->
+  <header id="mu-header">
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo2.png" alt="Logo img" style="height: 200%"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="#mu-slider">HOME</a></li>
+            <li><a href="#mu-about-us">ABOUT US</a></li>
+            <li><a href="#mu-restaurant-menu">MENU</a></li>
+            <li><a href="#mu-reservation" target="_blank">ORDER ONLINE</a></li>
+            <li><a href="#mu-client-testimonial">TESTIMONIALS</a></li>
+            <li><a href="#mu-contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+    <!-- Announcement  -->
+    <!-- Check bootstrap alert classes to change alert color/type -->
+    <div class="alert alert-danger" role="alert" id="announcement">
+    <div id="announcement-message">
+    </div>
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+    <button type="button" class="close" aria-label="Close" onclick="hide('announcement')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <!-- end of alert banner -->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+  </header>
+  <!-- End header section -->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script><script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+  <!-- Start slider  -->
+  <section id="mu-slider">
+    <div class="mu-slider-area">
+      <!-- Top slider -->
+      <div class="mu-top-slider">
+        <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/landscape.jpg" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Welcome to</span>
+            <h1 class="mu-slider-title" style="font-family: Brush Script MT, Brush Script Std, cursive;">The Wooden Spoon
+            </h1>
+            <p>Where everything is made fresh.</p>
+          </div>
+        </div>
+        <!-- / Top slider single slide -->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script>
-	<script id="spHTMLFormElementPrototypeScript">(function()
-  {
-    try
-    {
-      var sp_old_HTMLFormElementPrototype_submit = HTMLFormElement.prototype.submit;
-      HTMLFormElement.prototype.submit = function(AEvent)
-      {
-        try
-        {
-          var spEvent = document.createEvent('Event');
-          spEvent.initEvent('sp_submit', true, true);
-          this.dispatchEvent(spEvent);
-        }
-        catch(ErrorMessage)
-        {
-          console.error('spFormElementPrototype() Error sending "sp_submit" event from HTMLFormElement.prototype.submit: ' + ErrorMessage);
-        }
-        sp_old_HTMLFormElementPrototype_submit.apply(this);
-      };
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to HTMLFormElement.prototype.submit: ' + ErrorMessage);
-    }
+      </div>
+    </div>
+  </section>
+  <!-- End slider  -->
 
-    try
-    {
-      if (typeof __doPostBack == 'function')
-      {
-        var sp_old__doPostBack = __doPostBack;
-        __doPostBack = function(eventTarget, eventArgument)
-        {
-          try
-          {
-            var spEvent = document.createEvent('Event');
-            spEvent.initEvent('sp_submit', true, true);
-            window.dispatchEvent(spEvent);
-          }
-          catch(ErrorMessage)
-          {
-            console.error('spFormElementPrototype() Error sending "sp_submit" event from __doPostBack(): ' + ErrorMessage);
-          }
-          sp_old__doPostBack(eventTarget, eventArgument);
-        };
-      }
-    }
-    catch(ErrorMessage)
-    {
-      console.error('spFormElementPrototype() Error attaching to __doPostBack(): ' + ErrorMessage);
-    }
-  })();</script>
-</head>
-<body><!-- Pre Loader -->
-<div id="aa-preloader-area">
-<div class="mu-preloader"><img alt=" loader img" src="assets/img/preloader_cat.gif" /></div>
-</div>
-<!--START SCROLL TOP BUTTON -->
+  <!-- Start About us -->
+  <section id="mu-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-about-us-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">Discover</span>
+              <h2>ABOUT US</h2>
+              <i class="fa fa-spoon"></i>
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mu-about-us-left" style="margin: 10px 0px 0px">
+                 <p>A home cook for over 20 years, Tina Yake has been inspired by two generations of home cooks from her grandmother and her mother. Her family has been in the food industry since 1983 and has been very active with the family's business in the baking industry until 1999 when she started her own family.<br><br>Wayne, her husband, and their children have been her biggest fans until her co-workers talked her into cooking for them on a regular basis. Since The Wooden Spoon's inception, Tina and Wayne have been catering to businesses in the area for their breakfast and lunch needs. While their specialty is American cuisine, their shop features high grade, deli meats. Taking that one step further, Wayne and Tina are determined to put a twist on family favorites such as their philly cheesesteaks, panwiches, and homemade corned beef hash.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mu-about-us-right">
+                 <ul class="mu-abtus-slider">
+                   <li>
+                   	<img src="assets/img/about-us/bita_500x400.png" alt="img">
+                   	<br>
+      				<h4 style="text-align: center;">Homecooks—four generations strong.</h4>
+                   </li>
+                   <li>
+                   	<img src="assets/img/about-us/bita2_500x400.png" alt="img">
+                   	<br>
+      				<h4 style="text-align: center;">Homecooks—four generations strong.</h4>
+                   </li>
+                   <li>
+                   	<img src="assets/img/about-us/family2.jpg" alt="img">
+                   	<br>
+      				<h4 style="text-align: center;">Homecooks—four generations strong.</h4>
+                   </li>
+                   <li>
+                   	<img src="assets/img/about-us/bita_other_small.png" alt="img">
+                   	<br>
+      				<h4 style="text-align: center;">Homecooks—four generations strong.</h4>
+                   </li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About us -->
 
-<p><a class="scrollToTop" href="#"><span>Top</span> </a> <!-- END SCROLL TOP BUTTON --> <!-- Start header section --></p>
+  <!-- Start Restaurant Menu -->
+  <section id="mu-restaurant-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-restaurant-menu-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">Discover</span>
+              <h2>OUR MENU</h2>
+              <i class="fa fa-spoon"></i>
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="mu-restaurant-menu-content">
+              <ul class="nav nav-tabs mu-restaurant-menu">
+                <!-- Active means the page starts viewing it first -->
+                <li class="active" id="specials-tab"><a href="#specials" data-toggle="tab">Specials</a></li>
+                <li id="breakfast-tab"><a href="#breakfast" data-toggle="tab">Breakfast</a></li>
+                <li id="lunch-tab"><a href="#lunch" data-toggle="tab">Lunch</a></li>
+                <!-- <li id="a-la-cart-tab"><a href="#a-la-carte" data-toggle="tab">A La Carte</a></li>
+                <li id="sides-tab"><a href="#sides" data-toggle="tab">Sides</a></li>
+                <li id="drinks-tab"><a href="#drinks" data-toggle="tab">Drinks</a></li> -->
+              </ul>
 
-<header id="mu-header">
-<nav class="navbar navbar-default mu-main-navbar" role="navigation">
-<div class="container">
-<div class="navbar-header"><!-- FOR MOBILE VIEW COLLAPSED BUTTON --><button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button><!-- LOGO --><a class="navbar-brand" href="index.html"><img alt="Logo img" src="assets/img/logos/logo2.png" style="height: 200%" /></a></div>
+              <!-- Tab panes -->
+              <div class="tab-content">
 
-<div class="navbar-collapse collapse" id="navbar">
-<ul class="nav navbar-nav navbar-right mu-main-nav" id="top-menu">
-	<li><a href="#mu-slider">HOME</a></li>
-	<li><a href="#mu-about-us">ABOUT US</a></li>
-	<li><a href="#mu-restaurant-menu">MENU</a></li>
-	<li><a href="#mu-reservation" target="_blank">ORDER ONLINE</a></li>
-	<li><a href="#mu-client-testimonial">TESTIMONIALS</a></li>
-	<li><a href="#mu-contact">CONTACT</a></li>
-</ul>
-</div>
-<!--/.nav-collapse --></div>
-</nav>
-<!-- Announcement  --><!-- Check bootstrap alert classes to change alert color/type -->
-
-<div class="alert alert-danger alert-dismissable" id="announcement" role="alert">
-<div id="announcement-message"></div>
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-</button>
-</div>
-<!-- end of alert banner --></header>
-<!-- End header section --><!-- Start slider  -->
-
-<section id="mu-slider">
-<div class="mu-slider-area"><!-- Top slider -->
-<div class="mu-top-slider"><!-- Top slider single slide -->
-<div class="mu-top-slider-single"><img alt="img" src="assets/img/slider/landscape.jpg" /> <!-- Top slider content -->
-<div class="mu-top-slider-content"><span class="mu-slider-small-title">Welcome to</span>
-
-<h1 class="mu-slider-title" style="font-family: Brush Script MT, Brush Script Std, cursive;">The Wooden Spoon</h1>
-
-<p>Where everything is made fresh.</p>
-</div>
-</div>
-<!-- / Top slider single slide --></div>
-</div>
-</section>
-<!-- End slider  --><!-- Start About us -->
-
-<section id="mu-about-us">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="mu-about-us-area">
-<div class="mu-title"><span class="mu-subtitle">Discover</span>
-
-<h2>ABOUT US</h2>
-</div>
-
-<div class="row">
-<div class="col-md-6">
-<div class="mu-about-us-left" style="margin: 10px 0px 0px">
-<p>A home cook for over 20 years, Tina Yake has been inspired by two generations of home cooks from her grandmother and her mother. Her family has been in the food industry since 1983 and has been very active with the family&#39;s business in the baking industry until 1999 when she started her own family.<br />
-<br />
-Wayne, her husband, and their children have been her biggest fans until her co-workers talked her into cooking for them on a regular basis. Since The Wooden Spoon&#39;s inception, Tina and Wayne have been catering to businesses in the area for their breakfast and lunch needs. While their specialty is American cuisine, their shop features high grade, deli meats. Taking that one step further, Wayne and Tina are determined to put a twist on family favorites such as their philly cheesesteaks, panwiches, and homemade corned beef hash.</p>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="mu-about-us-right">
-<ul class="mu-abtus-slider">
-	<li><img alt="img" src="assets/img/about-us/bita_500x400.png" />
-	<h4 style="text-align: center;">Homecooks&mdash;four generations strong.</h4>
-	</li>
-	<li><img alt="img" src="assets/img/about-us/bita2_500x400.png" />
-	<h4 style="text-align: center;">Homecooks&mdash;four generations strong.</h4>
-	</li>
-	<li><img alt="img" src="assets/img/about-us/family2.jpg" />
-	<h4 style="text-align: center;">Homecooks&mdash;four generations strong.</h4>
-	</li>
-	<li><img alt="img" src="assets/img/about-us/bita_other_small.png" />
-	<h4 style="text-align: center;">Homecooks&mdash;four generations strong.</h4>
-	</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- End About us --><!-- Start Restaurant Menu -->
-
-<section id="mu-restaurant-menu">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="mu-restaurant-menu-area">
-<div class="mu-title"><span class="mu-subtitle">Discover</span>
-
-<h2>OUR MENU</h2>
-</div>
-
-<div class="mu-restaurant-menu-content">
-<ul class="nav nav-tabs mu-restaurant-menu"><!-- Active means the page starts viewing it first -->
-	<li class="active" id="specials-tab"><a data-toggle="tab" href="#specials">Specials</a></li>
-	<li id="breakfast-tab"><a data-toggle="tab" href="#breakfast">Breakfast</a></li>
-	<li id="lunch-tab"><a data-toggle="tab" href="#lunch">Lunch</a></li>
-</ul>
-<!-- Tab panes -->
-
-<div class="tab-content">
-<div class="tab-pane fade in active" id="specials">
-<div class="mu-tab-content-area">
-<p style="text-align: center;">Check out our new Thanksgiving menu!</p>
-&nbsp;
-
-<div class="row"><!-- <div class="col-md-6">
+                <div class="tab-pane fade in active" id="specials">
+                  <div class="mu-tab-content-area">
+                    <p style="text-align: center;">
+                     Check out our new Thanksgiving menu!
+					          </p>
+					          <br>
+                    <div class="row">
+                      <!-- <div class="col-md-6">
                         <div class="mu-tab-content-left">
                           <ul class="mu-menu-item-nav">
 
@@ -611,78 +206,485 @@ Wayne, her husband, and their children have been her biggest fans until her co-w
                        <div class="mu-tab-content-right" style="padding: 0px; text-align: center">
                           <ul class="mu-menu-item-nav">
 
-                             <li> --><img src="assets/img/specials_thanksgiving_2020.jpg" /> <!-- </li>
+                             <li> -->
+                               <img src="assets/img/specials_thanksgiving_2020.jpg">
+                            <!-- </li>
 
                           </ul>
                        </div>
-                     </div> --></div>
-</div>
-</div>
+                     </div> -->
 
-<div class="tab-pane fade " id="breakfast">
-<div class="mu-tab-content-area">
-<p style="text-align: center;"><img alt="" src="assets\img\Togo of Menu_Spring2021_10x14-1.png" style="width: 100%; height: 100%;" /></p>
-</div>
-</div>
+                   </div>
+                   <a href="assets/img/specials_thanksgiving_2020.pdf" style="text-align: center;display:block; padding: 10px 0px 30px; font-size: 15px" target="_blank">
+                     View Thanksgiving Menu PDF
+                   </a>
+                 </div>
+                </div>
 
-<div class="tab-pane fade " id="lunch">
-<div class="mu-tab-content-area">
-<p style="text-align: center;"><img alt="" src="assets\img\Togo of Menu_Spring2021_10x14-2.png" style="width: 100%; height: 100%;" /></p>
-</div>
-</div>
-<!-- end of drinks tab --></div>
-</div>
-</div>
-</div>
-</div>
-<a href="assets\pdf\menu.pdf" style="text-align: center;display:block; padding: 10px 0px 30px; font-size: 20px" target="_blank">View Printable Menu&nbsp;</a></div>
-</section>
-<!-- End Restaurant Menu --><!-- Actual Order Online section -->
 
-<section id="mu-reservation" style="padding: 50px 0px; background: #FAFAFA  ">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="mu-reservation-area">
-<div class="mu-title"><span class="mu-subtitle">From Your Home</span>
+                <div class="tab-pane fade " id="breakfast">
+                   <div class="mu-tab-content-area">
+                     <p style="text-align: center;"><img alt="" src="assets\img\Togo of Menu_Spring2021_10x14-1.png" style="width: 100%; height: 100%;" /></p>
+                    <!-- <p style="text-align: center;">
+                     Make it a deal! Add hash browns for 1.00 with the purchase of a beverage.
+					          </p>
+					          <br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
 
-<h2 style="color: black">Order Online</h2>
-</div>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Breakfast Burritos*</a></h4>
+                                  <p>Made with farm fresh scrambled eggs, our homemade pico de gallo, shredded vermont cheddar and your choice of bacon, sausage or chorizo.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Egg Croissant Sandwich*</a></h4>
+                                  <p>Two farm fresh eggs cooked any style, with your choice of applewood bacon or country sausage, topped with vermont cheddar or baby swiss cheese.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Fluffy 3 Egg Omelet*</a></h4>
+                                  <p>Grilled chicken or tofu for an extra 1.49</p>
+                                  <p>Served with your choice of wheat toast, sourdough toast, or a biscuit. Choose any of the following four ingredients to craft your own specialty omelet:</p>
+                                  <p>Tomatoes • Onions • Pico de Gallo • Sweet Bell Peppers • Jalapeños • Mushrooms • Spinach • Applewood Bacon • Country Sausage • Cubed Ham • Vermont Cheddar • Baby Swiss Cheese</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Hash Brown Casserole</a></h4>
+                                  <p>Bacon and sausage casserole or veggie casserole, topped with melted cheddar cheese.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Biscuits &amp; Country Gravy</a></h4>
+                                  <p>Fresh baked buttermilk biscuits doused in our creamy homemade country gravy made with bacon and pork sausage for the perfect flavor.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="padding: 0px">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right" style="padding: 0px">
+                          <ul class="mu-menu-item-nav">
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Corned Beef Hash &amp; Eggs*</a></h4>
+                                  <p>A generous portion of homemade corned beef hash, served with eggs and choice of toast.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Angry Irishman*</a></h4>
+                                  <p>Our homemade corned beef hash, topped with cheddar cheese, country gravy, fresh jalapeños, and two eggs.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Egg Bacon Panwich*</a></h4>
+                                  <p>Two fried eggs and bits of bacon sandwiched between two fluffy buttermilk pancakes. Baked to perfection and wedged so you can dunk and eat!</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">From the Griddle</a></h4>
+                                  <p><strong>Lemon Ricotta</strong><br>Pancakes topped with whipped cream, raspberry syrup &amp; lemon zest.</p>
+                                  <p><strong>Caramel Macchiato</strong><br>Pancakes with a shot of espresso, topped with whipped cream, caramel syrup &amp; Heath crumble.</p>
+                                  <p><strong>French Toast*</strong><br>A thick slice of fresh brioche french toast served with your choice of either eggs or bacon.</p>
+                                  <p>**Ask to see if we are running a seasonal special!</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">American Classic*</a></h4>
+                                  <p>An American staple. Two eggs breakfast with hashbrowns, choice of toast and a choice of either smoked applewood bacon or country breakfast sausage patties.</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                       </div>
+                     </div>
+                   </div> -->
+                 </div>
+                 <!-- <p style="font-size:11px">
+                 	*Thoroughly cooking foods of animal origin such as beef, eggs, fish, lamb, pork, poultry, or shellfish reduces the risk of foodborne illness. Individuals with certain health conditions may be at higher risk if these foods are consumed raw or undercooked. Consult your physician or public health official for further information.
+                 </p> -->
+                </div>
 
-<div class="mu-reservation-content">
-<div class="tab-content">
-<div class="tab-pane fade in active">
-<div class="mu-tab-content-area">
-<ul class="mu-menu-item-nav">
-	<li>
-	<div class="media" style="margin: 10px 0;">
-	<div class="media-body">
-	<h4 class="media-heading" style="border: 3px solid rgb(156, 28, 52); padding: 1em; text-align: center;"><a href="https://foxhill.orderwoodenspoonkc.com/"><span style="font-size:26px;"><span style="color:#000000;">Indian Creek and Roe</span></span><span style="color:#000000;"><span style="font-size:26px;">&nbsp;- Foxhill Location</span></span></a></h4>
 
-	<div style="text-align: center; font-size: 1.1em"></div>
-	</div>
-	</div>
-	</li>
-	<li>
-	<div class="media" style="margin: 10px 0;">
-	<div class="media-body">
-	<h4 class="media-heading" style="border: 3px solid rgb(156, 28, 52); padding: 1em; text-align: center;"><a href="https://collegeblvd.orderwoodenspoonkc.com/"><span style="font-size:26px;"><span style="color:#000000;">College and Quivira&nbsp;-College Location</span></span></a></h4>
 
-	<div style="text-align: center; font-size: 1.1em"></div>
-	</div>
-	</div>
-	</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testing --><!-- Start Order Online section --><!-- <section id="mu-order-online" style="padding: 50px 0px">
+                <div class="tab-pane fade " id="lunch">
+                  <div class="mu-tab-content-area">
+                    <p style="text-align: center;"><img alt="" src="assets\img\Togo of Menu_Spring2021_10x14-2.png" style="width: 100%; height: 100%;" /></p>
+                   <!-- <p style="text-align: center;">
+                  	  Make it a meal! Add a side and a beverage for 3.75.
+                  	 </p>
+                	 <p style="text-align: center;">
+                   	  *Please notify your server of any special dietary needs!
+                     </p>
+                     <br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Traditional Philly Cheesesteaks</a></h4>
+                                  <p>Sweet bell peppers, onions, and crimini mushrooms delicately sautéed with our basil garlic sauce and tossed into grilled slices of angus beef, melted provolone cheese and homemade pico de gallo. Your choice of a sourdough or wheat hoagie.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Mexi Cheesesteak</a></h4>
+                                  <p>Roasted red peppers, onions, jalapeños and green bell peppers seasoned and sautéed with our basil garlic sauce and tossed into grilled slices of angus beef, melted provolone cheese and homemade pico de gallo. Your choice of a sourdough or wheat hoagie.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Chicken Bacon Ranch</a></h4>
+                                  <p>Chicken with spring mix, radish, cheddar cheese and bacon, all tossed in ranch dressing inside our garden vegetable wrap.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="padding: 0px">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right" style="padding: 0px">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Chicken Spiedini</a></h4>
+                                  <p>Chicken marinated and grilled in our spiedini sauce, asiago and cheddar cheeses, spring mix with radish, onion and tomatoes inside our garden vegetable wrap.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Thai Peanut</a></h4>
+                                  <p>Marinated in peanut sauce, our chicken is mixed with heritage blend lettuce, radish, green onions and cilantro tossed with peanut bits inside our garden vegetable wrap.</p>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Teriyaki</a></h4>
+                                  <p>All natural grilled chicken tossed with spring mix, green onion and cucumbers all in our teriyaki sauce inside our garden vegetable wrap.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">CYO</a></h4>
+                                  <p>Dare to be creative and choose from one of our marinated all natural grilled chicken selections, one of our smoked deli meats or even tofu! You also get your choice of veggies and a type of cheese inside your choice of wrap.<br><br>
+                                  	<strong>Toppings</strong><br>Chicken • Black Forest Ham • Tofu • Provolone • Swiss • Cheddar • Asiago • Roasted Red Peppers • Sweet Green Peppers • Tomatoes • Red Onions • Green Onions • Fresh Jalapeños • Crimini Mushrooms • Cilantro • Cucumber
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                       </div>
+                     </div>
+                   </div> -->
+                 </div>
+                 	<!-- <p>
+                 	All of our natural chicken wraps can be made into a salad at no additional charge and are paired with our homemade broccoli slaw.
+					</p> -->
+                </div>
+                <div class="tab-pane fade " id="a-la-carte">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">2 Eggs</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">3 Slices of Bacon</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">2 Sausage Patties</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="padding: 0px">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right" style="padding: 0px">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">2 Pancakes</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Plain Croissant</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Hash Browns</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Side Gravy</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="tab-pane fade " id="sides">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">French Fries</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Extra Meat</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Extra Veggies</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                            <li style="padding: 0px">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right" style="padding: 0px">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Side Salad</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Tater Tots</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Broccoli Slaw</a></h4>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+
+
+                          </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <!-- end of drinks tab -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="assets\pdf\menu.pdf" style="text-align: center;display:block; padding: 10px 0px 30px; font-size: 20px" target="_blank">
+        View Menu PDF
+      </a>
+    </div>
+  </section>
+  <!-- End Restaurant Menu -->
+
+  <!-- Start Reservation section -->
+  <!-- <section id="mu-reservation" style="padding: 50px 0px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-reservation-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">Make A</span>
+              <h2>Reservation</h2>
+              <i class="fa fa-spoon"></i>
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="mu-reservation-content">
+              <p>We require that customers wear masks until they are seated.
+                  Due to limited seating, reservations will be cancelled if 10 minutes late unless we are notified at
+                  <a href="tel:9135441125" style="color: #9c1c34">(913) 544-1125</a>.
+              </p>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="breakfast">
+                  <div class="mu-tab-content-area">
+                    <p style="text-align: center;">
+                     &nbsp;
+                   </p>
+                      <ul class="mu-menu-item-nav">
+                        <li>
+                          <div class="media">
+                            <div class="media-body">
+                              <h4 class="media-heading" style="border:3px; border-style:solid; border-color:#9c1c34; padding:1em">
+                                <a href="https://tableagent.com/kansas-city/the-wooden-spoon-at-fox-hill-llc/" style="color: white" target="_blank">
+                                  <div style="text-align: center; font-size: 1.1em"> Dine-in Reservation </div>
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End Reservation section -->
+
+<!-- Actual Order Online section -->
+  <section id="mu-reservation" style="padding: 50px 0px; background: #FAFAFA  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-reservation-area">
+            <div class="mu-title">
+              <span class="mu-subtitle">From Your Home</span>
+              <h2 style="color: black">Order Online</h2>
+              <i class="fa fa-spoon"></i>
+              <span class="mu-title-bar"></span>
+            </div>
+            <div class="mu-reservation-content">
+              <div class="tab-content">
+                <div class="tab-pane fade in active">
+                  <div class="mu-tab-content-area">
+                      <ul class="mu-menu-item-nav">
+
+
+                        <li>
+                          <div class="media" style="margin: 10px 0;">
+                            <div class="media-body">
+                              <h4 class="media-heading" style="border:3px; border-style:solid; border-color:#9c1c34; padding:1em">
+                                <a href="https://foxhill.orderwoodenspoonkc.com/order#/" style="color: black" target="_blank">
+                                  <div style="text-align: center; font-size: 1.1em"> Indian Creek and Roe </div>
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="media" style="margin: 10px 0;">
+                            <div class="media-body">
+                              <h4 class="media-heading" style="border:3px; border-style:solid; border-color:#9c1c34; padding:1em">
+                                <a href="https://collegeblvd.orderwoodenspoonkc.com/" style="color: black" target="_blank">
+                                  <div style="text-align: center; font-size: 1.1em"> College and Quivira </div>
+                                </a>
+                              </h4>
+                            </div>
+                          </div>
+                      </li>
+
+
+                      </ul>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testing -->
+
+  <!-- Start Order Online section -->
+  <!-- <section id="mu-order-online" style="padding: 50px 0px">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
