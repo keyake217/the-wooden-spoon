@@ -2557,6 +2557,16 @@ RESERVATION SECTION
   }
 }
 
+.alert span {
+  font-size: 35px;
+}
+.close {
+  top:-28px !important;
+}
+
+.alert > div {
+  line-height: 28px;
+}
 .alert-info {
   position: relative
   min-width: 550px;
